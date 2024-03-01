@@ -23,7 +23,7 @@ public class BrowserTest {
 		driver.get("https://rahylshettyacademy.azurewebsites.net/webapp/");
 		String text =driver.findElement(By.tagName("h1")).getText();
 		System.out.println(text);
-		Assert.assertTrue(text.equalsIgnoreCase("RahulShettyAcademy.com Learning"));
+		Assert.assertTrue(text.equalsIgnoreCase("http://localhost:8080/webapp/"));
 		driver.close();
 	
 		
