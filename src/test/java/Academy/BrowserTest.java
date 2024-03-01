@@ -20,10 +20,10 @@ public class BrowserTest {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://rahylshettyacademy.azurewebsites.net/webapp/");
+		driver.get("http://localhost:8080/webapp/");
 		String text =driver.findElement(By.tagName("h1")).getText();
 		System.out.println(text);
-		Assert.assertTrue(text.equalsIgnoreCase("http://localhost:8080/webapp/"));
+		Assert.assertTrue(text.equalsIgnoreCase("RahulShettyAcademy.com Learning"));
 		driver.close();
 	
 		
